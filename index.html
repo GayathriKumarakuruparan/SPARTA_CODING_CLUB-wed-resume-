@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB RESUME</title>
+
+    <style>
+        /*class name always start with .*/
+        .title {
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: underline black;
+
+        }
+
+        .center {
+            text-align: auto;
+        }
+
+        /*box model:
+border
+padding
+margin
+*/
+        @media (max-width: 768px) {
+            .view {
+                width: 100%;
+            }
+        }
+
+        .explore {
+            background-color: white;
+            width: 100px;
+            padding: auto;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .explore:hover {
+            border: 2px dotted black;
+        }
+
+        .card:hover {
+            border: 2px solid white;
+        }
+
+        button:hover {
+            border: 2px solid grey;
+        }
+
+        .box {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 1px solid gray;
+            margin: 10px auto;
+            padding: 10px;
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .padding {
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .my-img {
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .box-img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .outer {
+
+            padding: 1px 400px;
+            margin: auto;
+            width: 600px;
+            background-attachment: fixed;
+
+        }
+
+        .card {
+            border: 1px solid grey;
+            border-radius: 20px;
+            margin: auto;
+            width: 300px;
+            /* padding: 20px 40px; */
+        }
+
+        .background {
+            color: black;
+            background-image: url('https://media.istockphoto.com/id/1404470276/photo/examiner-reading-a-resume-during-job-interview-at-office-business-and-human-resources-concept.jpg?s=1024x1024&w=is&k=20&c=3rzehAQRGJ9npi4EP-eTW_X0xb2C4a1Ogq30OvQQgqg=');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer background">
+        <h1 class="title " style="text-align: center;">WEB RESUME</h1>
+        <div class="card" class="view">
+            <img class="my-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIMDRISEhIKEhIMDxkPDwwMDx8XCggZJSEnJyUhJCQpLjwzKSw4LSQkNEQ0OEZKN003KDE7Tkg1SjxCQz8BDAwMEA8QGA8PEDErGCsxMTQ/NDw0MTQxMT8xMTE0NDE/MTE/MTE0MTE0NDExNDExMTExMT8xMTExMTExMTExMf/AABEIAMgAyAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADoQAAEDAgMFBQcEAQMFAAAAAAEAAhEDIRIxQQQFIlFhMlJxgfAGQpGhscHhE2Jy8dEUU8IjJDOCsv/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAfEQEBAAMAAgMBAQAAAAAAAAAAAQIRMSFBUWFxEiL/2gAMAwEAAhEDEQA/AKKElQlUXLsEn1qqlUSqlSFKkoCVWJBHKsFLlECpDBVyhlElLVevFVKhKkJVKqPXNElIoPXVVqpKkIFX66oQfWisISwrHooVaSLVbt78Wx0H91pYekFYNfV10HjFu11706s9QIQXX9lqhdskdx5aPkfut23bxp7OBiJJdcMb21xvY6pLKrZyc1wGtwf8JPtCxzdoLjMOaMB90jksWeVPLt7NvanVa88bf024nNd2iOii8lQrPaHYfeZgM6iQfsrRo6Yi8JJrXiPihbe3JC4XB5hNtcxmoQROTpHgrDroH9k82kO8dPuoCqfppmJSVQ9clEoUomm6AImm/qEowq1QVhKXKtVmpClpJsp68FeikKK1FIUKkgUlQeuanrqkrUUUBUlldHY3B2ybQwwAAHglc2JVjZH7QP02RiaMcOMCwupL3JvA7M6pFy5mFvdaZF/hKZtO2VK0B76jhixYXGwWDd9Ev2htMFoLnYZd2QV2Nu3U/Z2Y6jqYvDGtu55/wsXpx4xmQPBRAHzp+VEFiyd4iFbxbzR1W38CqwyCpzA0TbvAt65JFN0gepWhpgzy0WeML3Dk6R4HJHKfRzSrQtRLSXKJpuhBS27S3FBkdXWBUGpvroiCWx4cLFp/iUxhWolyBqLXPRJ/1bc4qR3sPAq2ppEPExGF4GZaUwva1oJNhke8jbRjHBwkEEHUIkjZ2y4kNc0EXDhGM84T+fopiSFFagUgqBXChCUqVJVqeuiki2bpfh2qme8+Ol/7WMJ9J+CrTf3XMfbWP6VUzg/obxBNgysCfjdeq9odndUYxzQXBhIc1ol14v8AJeX9oWYNtcbcRxgjWTP3Xu9mqY6bHd5gd0uAsZCeHld1bA+pWY4B4ax4e55HCIOXiovX+uqizs/0+ckYmjwlAwX8vinNbhkcnHzQsFlvTJEQSEis2Hg95vzC01BDh+4eZS9rbwg8nfBZyhhbSmNKS310TWqMWhqtxN6tu3oUUqyJEc7JBAJlpaGNc4XcRwvTMbn4b4LEW7Jdy+qaxgLQIkNynMJjKYAiARydfErX2iA9zsEioJJaS3snxUFGplw8DsTcQ4CPFa+y0QLCBhaMlzd6bwAYGsN3iXGeJg5KvjpK2veTuyzhjNwMknoViZtDyZxP8ZWdgLjHoLUymAI+fNYuX2pLVna6kziPjqujsG8cRDXxJsHd5c97BHqySQWn6FOOSuNj1RVJex1f1KTXTciD1KauhV66KK1UJCFWZgHTL5z91QVnsxrJjrI/CiZ7Stl1Kp/uUmuPQkfhes3I/FslE5xTDfhb7Ly2+xj2PZ36tBaT4GB9V3PZKpi2MCey8t6t1+6xlxl2py9Sor+3wCiyngHDj/k3zJHooXCHePyTK5gNd3XAzqQc/uqqC/muqKqNtPI/BLqDExwjNp8inuuCgaCR6hFh9uaw2HgntSS3C5w5OMdQmsKwRKwEDH4nOGRbz95Sq8tAIAIxXGsKFPYUb2lzbOLSNQJlKYZAIyIkJ7VuJjDnlodxnCxpnS3aBXn6ri5xPM5DIL1W2uig/ThheZ2aniqR3Zceq55eFrZghrPexG5OilJ9+Y65hXUaDKpjdfRXPe29ap7ngch9kiqJCB5M5TJ8greYb55ck4wZV2tyPmm5vddMcrLpQuNuJ/E8X4mT812oXfHgnFKlahSkcywPMaZhDk09bzqmAnD5kfJA51o5ZDmpNe0DFuw6llbzaMP+QtfsXV/6VRndeHfEfhZtj49k2hmsNf8AO/1QextQivUZo9mI9IP5Wbxm9ezaVELRA8VFhPDhmJhnq23x/wAoWHEwHUi/ijoZkdMXw/EoGDCXt7rpvnB9FdIQxBHX5IWiCeiYTw+F0DjDwdHDzVtaYdrZDwb8TAcsoshprXtrYbPdd5wR+CsbFilT4a9ru9wH7IqrxYaOkFwPYUqglsgAkOBAOSlSjiOJpgjQ9hykrZnlryw/yB0Pr/KfR2trjdtRoJwhzuzPLxSWUTYOLCADwjNs8uid/pAWEBzpdMl18fimbBW8KxLHtA4W2LpuTE/dcvdoAqunu4V0t5swtiSS4cX741XCo1sFST72fMLFv+vJ5oxzyTJJvpoEp9SCADFud014uVnqDi/9bcgnUZ3fk/Z34jf+1VV8Ojkl7OcMnKBqhxSZR7O/8utuR0VvFuHqvRuXmtx/+UHr9ivSwukOPAFUjKErSGw8J6OEDmgAFlWSik17o7VVmr6L2jxz+yy+zVT9PeAHfxsPI2J+ydup2Hamx7xg872+6w0AaG8GwezXAnmJgoFfQGGbeiohwmSYy+BUWA8Sw4XA6TfwRPbhqD9zS2+ZI9FLTKxDmBw9xwe7n1+i00gzISa44Qe6Y6haK4w+WveQvYHNP7hdFMY31RVYSJsCwjUEX+krE0z5/JO2ZoDntOcB/QQYd8vokNbhcW91xas0NDCjS2euiYkrA9aJ1PJKCNrw0S4gAauNkyhi3oYd0weS89UF13Nu2gVJIyy/kuK9hLoF/DNc7002EOAnOLWvqjJE+fwUEA9NVX5GPxQPjAYAFtEhoWvaqZDZExqOSyNKZd+RlNeHb3IwXcSBD2xizPqV6GF4hjpK7e7NtqMgPJczr2qY8fst41S/TtnJCR60Rnpl9UJC2QwqRqoUkpuwVWOyMh3S39LNvsfp7Y8ixD8Q6XlOqe6T4eEf2p7RtBqU3/7lFrie9aPsiivcMeHNBmzmgg81Fk3U8P2Wi4XH6TfEkCCosB5MptNoc1w5y0nR3qEopmzuhx/jbla6WkbLqYJzjC7kSLFE0WCukIL254XYx4H8gogJ8jlo5XTHMqbMf1gR2TOIcpWeszC+O80O/wArr1GXy6xqsG2MBDXAzDiwkZLNWimFMASmpoSiqzyAYIBjtZlq5G1h0g43uH7jOBaNpqxVcCSJlvUFIc8YNLXRazSv14YQc5yOYQbMHOqANwye9kVnqvufUJbXkOEEi+mizVMvLe5rhbDbo5W1jTmI8RAKW6o6ADLhnftfFaWscG8QAtOGblZv0646o8cj5LnbRTwutk7Lot2SVWZibGouOqsfCyx3CabOEnUX8Vupve5nutAETqEigAW4bAn4nRaxGCA6mINy7Nalq/ma3a7G6KxqUQDmw4OpGnrotjlydy8L3MkGWYsTeh/K6xErtjxzgXKiiKqEoFUAt6zHSEW+uPZqD+TSzq2D+Qo8AtPhboj2lmPd8606kCNARP8AxVRXc9lqgdsTB3HuYfjP3UWb2MfioVG92pi+I/Ci5UOMipuwuB5GSohWmmjs1Abw4FniRcfQo2QSc5KU90sDr8Ja+ecWP0+a0VmYYIy5zYqJT9Ms4XMqgBz4mHcWWRC6j2cJA6GdSsW2CXsERicATzmyzW9bjGwpgMrOwRY5i3gtFPJLDlb7pE13uAwzxRqCsD3SwGczloF3N9gCta4cLO1cuDWBFvPqs5dDM5CDf1dG6/4VUoxCdDcook3dDZVOKD4RqFpfWcwNMyD7s5INpp4YcNDNhZC936jgBAGd+0sdrrZcZZWtlVrhnfuntBHhsuYJBtIIOY0W8PLmggDiE58LSnQxy31T3Bp/lfwKjHgXzM66IzTlp1Oc80unTxdI+K3ixla6W5Hf9wLziBvqV6Ij1ovO7jpn/UNJyDT9CvSELrjwQsj1yQkJhQEJISLEcxF9U7ZWB+zV2XmGvA5Xg/8A0lDL791O3Z2qjD79J7RGpifsqpfsXUIrVGaOZiPKx/KiR7MPDNuwzAeHM/l6hRc6yA+uaqERQuS0bTaHNIiZBb0AP5CcyXUmHPC3AepFlnpG/lb6p+zGP1GDR2NsagqqW028o6pNVgcBObTIvktJblGeKLaJb2YS4R5clmtxyNqbhqu/ccfjPoqU03eLIfTdfiaW9BF/uksKQzb5rMc5kmHtaGloFnAWlcmuZPl5Lq73biFMYYBEueRLn3K5FaJzi+Z1ResVldn6ujoMxX5ZlCc7f2iY/Dpp81jI42S+TqxDhAwASXCTxws0HFeThN40QvdicTEToMgmMqloIgcWc5qmOjlluqcPn8lq2R0tjVp+SQ0SzqDKPZDD47whNZxuq3tSKjcLpHvXkaJjSgqPxGO6rHrWXHQ3LU/7ht4xAgjR1ivSOXld3NLdopyD2wPnC9Y7NdsWYWQhITCPXJVhWyCEW7nYNqp8i8NI8bKoSS7DUBFsLgQeZWckDZP+hvJs2w1QD0vBUV74GDbS7m4PHJ0mfuqRoDIVFXyUhBRhgg9Z6FaKRDaomwcwsEe8RcfJZvXVNeYax3ccHfCx+SE2BxMjIE9kZFK2mcQd3s+ic/hIOc6AK9qZiYSBGGHRzV08cveLcVKe48PFtMvusTBH18F1qjMTXDvMLbLlgQB1HmhVn3g0gNcSS0cJaDxO1hcetJ4iBDiRhI7C7m01hSDDDCSTZ3ZELkPMAOgODjYOPCPL4qyZv65zmEX+adVolhAcx4ObsWqaxpcTIt+0cIXf3qwPbhMgupgtDjwtOscvuiTa/l5d7Zyy5e6kha6tEtkaix7zUplImwjryCAbSZbDcFwQUwWmRmCtFIYcJJHP+PRUWcR6T4o6csdDoVuK+HpylaH4TUEiQ9uliOqyBgN7+SaKhJgEDFadQFqD9amBxqMIHEC3AfP8r1Tz65ryL34WgTfK3ZA9ALt7q3gKrRTdAc0cJJ/8n5W8b6LpFV68FMyp4f0uhVCz17EHQXjmtKRtIgA8kXiDv1oJpPGTqTZ6EW/4q1N4gu2Wm7uuLCeev/JRZZUwjCPBQnoriFRCGlOdCY04mFp1tbMSPwElwE+8fojoOIceRafE6/ZSbmux0GHXBB6kWP0WljsTL9yLhZNhMtqNvwvxDnB/Mp+z2gHUx1VFWd3Cf4ulcZ7C2o8d15A5RNl29obxEeiuVtrIqyPeYD55H6LPtq8YN5UQ6njJ7JwtbqOZ+i4xJjMwMhou/tQ4LkiDYaFcmpSDiSI8NFZMVW7xL2tN8bgPC8Lub1AcGN94zh65WXF2Sk41qZGjwema6m9eCpRqTAa4z0yVj4W/BH6TazCCIqU2x++AsdNgaCLzN5Xbq02lznOnGDhlps3qCFyK1RuIjFUvdvddZGUaxsnSDTDsrDNKeIdAPQxqnxAJETGpSWvnMDhGY95Egyy34QW5/wCFIANsvmjZTxOnTw4VoZTadJzE6K2pjaRTdxQbjrk1OAwuEDCQZbdLewNdA+Kc98tAImRZw7TCmCzXXoNh2j9VgmMbRxDV3VaYXnNlrFrgeKW3EnhcvRscHNBGThIldcapUS63ZPT5phSq5iBOZ+SaQvqA7G9hza8PE5ZH8KJG0MLmw3POAe0FFlloKqPXNRRDcU5C0Q6Z62zKtRSaNkeG1ovD2FsaEi/0lbKcFx8LdVaip1A2kAOHMjzK523sADX8nFnS9x9Cooin05m3RhBIk9kftXNeQ2QGwSO0c1aiKwvZHkVaYFxjEujO62b9kFt7YbN7xlRRU4vS/wBdrqNMhwD2swO5mMvksNUAn3BhyjMqKKqZ3i5OcobBRRCamGW+GcCycyGgkHTUXUUWY7emftO8/JEBeDz8wootRwy61MzBiQLA6rs7BVBpw4wWmIPaIUUXTFQx9cRwiT1ENCSJJknPlkPBUomtG0zDrxyvoooopP/Z" alt="">
+            <h1 class="padding">Who am I?</h1>
+            <h3 class="padding">Myself GAYATHRI, from Tamil Nadu, India. An Electronic Engineer</h3>
+            <div class="explore">
+                <a href="./full_resume.html">
+                    <p>Explore here</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+
+
+    <!-- <div class="box">   
+      <img class="box-img" src="image.jpg">
+    <h3>exploring</h3>
+    <p>just for my final project</p>
+   </div>-->
+</body>
+
+</html>
